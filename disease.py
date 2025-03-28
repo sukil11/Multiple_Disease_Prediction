@@ -1,4 +1,3 @@
-
 import os
 import pickle
 import streamlit as st
@@ -34,45 +33,67 @@ def set_bg_image(image_url):
     )
 
 # Example usage
-set_bg_image("https://www.humanitas.net/content/uploads/2017/10/medical-care.jpg")
+set_bg_image("https://cdn.wallpapersafari.com/33/95/0Czm58.jpg")
 
 #Home page
 if selected == "Home":
-    with st.expander('Kidney'):
+    with st.expander('**Kidney**'):
+        st.title('Symptoms and Remedies for Kidney disease')
         st.image("C:\\Users\\SukilPriya\\Pictures\\kidney.jpeg")
         st.write("""
-            1. **Tiredness**: Feeling tired or weak
-            2. **Blood in the Urine**: Blood in the urine
-            3. **Itchy Skin**: Dry, itchy skin
-            4. **Nausea and Vomiting**: Feeling sick or being sick
-            5. **Difficulty Sleeping**: Trouble falling or staying asleep
-            6. **Frequent Urination**: Needing to urinate more often, especially at night
-            7. **Swelling in the Legs or Ankles**: Puffiness or swelling due to fluid retention
+            1. **Tiredness**: Feeling tired or weak.
+               - **Remedy**: Ensure you get enough rest and manage stress. Consider increasing your intake of iron-rich foods and consult with a doctor for any underlying issues. 
+            2. **Blood in the Urine**: Blood in the urine.
+               - **Remedy**: This may indicate a serious issue such as kidney stones or infection. It’s important to consult a healthcare provider immediately. 
+            3. **Itchy Skin**: Dry, itchy skin.
+               - **Remedy**: Use a good moisturizer and avoid hot showers that can dry out the skin. For persistent itching, a healthcare provider may recommend medications to help manage the symptoms.
+            4. **Nausea and Vomiting**: Feeling sick or being sick.
+               - **Remedy**: Stay hydrated, avoid heavy meals, and eat light, bland foods. If the symptoms persist, contact your doctor for a more accurate diagnosis. 
+            5. **Difficulty Sleeping**: Trouble falling or staying asleep.
+               - **Remedy**: Try establishing a bedtime routine, reduce caffeine intake, and limit screen time before bed. If difficulty sleeping continues, it may be a sign of kidney problems and should be evaluated.  
+            6. **Frequent Urination**: Needing to urinate more often, especially at night.
+               - **Remedy**: Avoid drinking too many fluids before bedtime and reduce intake of caffeinated drinks. If frequent urination continues, it’s best to speak with a healthcare provider. 
+            7. **Swelling in the Legs or Ankles**: Puffiness or swelling due to fluid retention.
+               - **Remedy**: Elevate your legs when sitting, limit salt intake, and try wearing compression stockings. If swelling persists, see a doctor to rule out kidney or heart issues. 
         """)
-    with st.expander('Liver'):
-        st.title('Symptoms of Liver disease')
+    with st.expander('**Liver**'):
+        st.title('Symptoms and Remedies for Liver disease')
         st.image("C:\\Users\\SukilPriya\\Pictures\\liver.jpeg")
         st.write("""
-            1. **Bleeding and Bruising**: Bleeding easily or bruising more than normal
-            2. **Weakness and Muscle Wasting**: Loss of muscle mass or strength
-            3. **Swelling in the Legs/Ankles/Feet**: Edema caused by liver dysfunction
-            4. **High Temperature and Shivering**: Common symptoms with liver inflammation
-            5. **Yellowing of the Skin and Eyes (Jaundice)**: A yellow tint in the skin and/or eyes
-            6. **Loss of Appetite**: Decreased interest in food or difficulty eating
-            7. **Dark Urine**: Urine may appear darker than usual, sometimes resembling cola
+            1. **Bleeding and Bruising**: Bleeding easily or bruising more than normal.
+               - **Remedy**: Ensure a balanced diet rich in vitamin K and avoid medications that may increase bleeding risks. If you notice frequent or severe bruising, consult with a healthcare professional.
+            2. **Weakness and Muscle Wasting**: Loss of muscle mass or strength.
+               - **Remedy**: Engage in light exercises or physical therapy to maintain muscle strength. Eating a protein-rich diet may help in rebuilding muscle mass. Always consult a doctor before starting an exercise routine. 
+            3. **Swelling in the Legs/Ankles/Feet**: Edema caused by liver dysfunction.
+               - **Remedy**: Elevate the legs, reduce salt intake, and avoid standing for prolonged periods. Diuretics may be prescribed by your doctor to reduce fluid retention. 
+            4. **High Temperature and Shivering**: Common symptoms with liver inflammation.
+               - **Remedy**: Rest and stay hydrated. If fever persists, consider taking acetaminophen (under medical guidance) or consult a healthcare provider to identify and treat the underlying cause.  
+            5. **Yellowing of the Skin and Eyes (Jaundice)**: A yellow tint in the skin and/or eyes.
+               - **Remedy**: Seek medical attention immediately, as jaundice can indicate serious liver problems. Treatment may include medications, lifestyle changes, and in some cases, a liver transplant.  
+            6. **Loss of Appetite**: Decreased interest in food or difficulty eating.
+               - **Remedy**: Eat smaller, frequent meals and try high-protein snacks. If you struggle with eating, talk to a nutritionist or healthcare provider to manage your diet effectively. 
+            7. **Dark Urine**: Urine may appear darker than usual, sometimes resembling cola.
+               - **Remedy**: Increase water intake to stay hydrated. Dark urine can indicate dehydration or liver issues, so if it persists, see a healthcare provider for a proper diagnosis. 
         """)
 
-    with st.expander('Parkinsons'):
-        st.title('Symptoms of Parkinsons disease')
+    with st.expander('**Parkinson\'s**'):
+        st.title('Symptoms and Remedies for Parkinsons disease')
         st.image("C:\\Users\\SukilPriya\\Pictures\\brain.jpeg")
         st.write("""
-            1. **Posture Instability**: Stooping or hunching over
-            2. **Loss of Smell**: A noticeable reduction or loss of your sense of smell
-            3. **Tremors**: Shaking in the hands, arms, legs, jaw, or head
-            4. **Impaired Balance**: Leading to an increased risk of falls
-            5. **Slowed Movement (Bradykinesia)**: Slower physical movements and difficulty with initiating movement
-            6. **Muscle Rigidity**: Stiffness and difficulty moving muscles, especially in the arms and legs
-            7. **Changes in Speech**: Soft or slurred speech, or difficulty articulating words clearly
+            1. **Posture Instability**: Stooping or hunching over.
+               - **Remedy**: Practice good posture techniques and engage in regular physical therapy to strengthen muscles and improve posture. A physical therapist can teach specific exercises to improve balance.  
+            2. **Loss of Smell**: A noticeable reduction or loss of your sense of smell.
+               - **Remedy**: While there's no direct remedy for loss of smell, maintaining a healthy diet and managing Parkinson's symptoms with medications can help slow progression. It's also beneficial to consult with a specialist about olfactory training.
+            3. **Tremors**: Shaking in the hands, arms, legs, jaw, or head.
+               - **Remedy**: Medications like levodopa or dopamine agonists may help manage tremors. Regular exercise, such as yoga or tai chi, may also aid in improving motor control and reducing tremors. 
+            4. **Impaired Balance**: Leading to an increased risk of falls.
+               - **Remedy**: Engage in balance training exercises, such as physical therapy or certain yoga and Pilates exercises. Consider using mobility aids if recommended by a healthcare provider. Occupational therapy can help modify the environment to reduce fall risks. 
+            5. **Slowed Movement (Bradykinesia)**: Slower physical movements and difficulty with initiating movement.
+               - **Remedy**: Regular physical exercise and movement-focused therapies, such as dance or boxing classes designed for Parkinson’s, can help improve motor function. Medications like levodopa can also help improve movement speed and initiation.
+            6. **Muscle Rigidity**: Stiffness and difficulty moving muscles, especially in the arms and legs.
+               - **Remedy**: Stretching, massage, and physical therapy can reduce muscle stiffness. Medications like dopamine agonists or muscle relaxants may be prescribed to reduce rigidity. Heat or cold therapy might also provide relief. 
+            7. **Changes in Speech**: Soft or slurred speech, or difficulty articulating words clearly.
+               - **Remedy**: Speech therapy can be highly beneficial for improving vocal strength and clarity. Practicing speaking out loud, engaging in vocal exercises, and using speech amplification devices can also help manage speech difficulties.  
         """)
 # Kidney Prediction      
 if selected == "Kidney Prediction":
